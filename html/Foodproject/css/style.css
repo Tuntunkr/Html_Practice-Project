@@ -1,0 +1,306 @@
+/*--------+++ HERO SECTION  */
+#herosec {
+    height: 73vh;
+    background-image: url(../Images/heroBG.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #herosec .hero-txt {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    padding-right: 25px;
+    height: 73vh;
+  }
+  
+  #herosec .hero-txt h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    color: var(--hColor);
+    font-weight: 700;
+  }
+  
+  #herosec .hero-txt h1 span {
+    color: var(--primary);
+  }
+  
+  #herosec .hero-txt p {
+    font-weight: 500;
+  }
+  
+  /*--------+++ COUNTER SECTION  */
+  .counterSection .Gridrow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .countBox {
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .countBox h4 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+  .countBox h6 {
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  
+  /*--------+++ ABOUT SECTION  */
+  .ticbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ticbox:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  .ticbox i {
+    color: var(--secoundry);
+    margin-right: 10px;
+  }
+  
+  .ticbox p {
+    margin: 0;
+  }
+  
+  #about img {
+    float: right;
+  }
+  
+  /*--------+++ MENUE SECTION  */
+  #menu .nav-pills .nav-link {
+    color: var(--hColor);
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  #menu .nav-pills .nav-link.active {
+    color: var(--primary);
+    background-color: transparent;
+  }
+  
+  #menu .recipe-Row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  #menu .recipe-Row .rec-card {
+    padding: 10px 10px 18px 10px;
+    border-radius: var(--bdr);
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  
+  #menu .recipe-Row .rec-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: var(--bdr);
+  }
+  
+  #menu .recipe-Row .rec-card p {
+    margin: 10px 0;
+    font-weight: 600;
+    color: var(--hColor);
+    font-size: 16px;
+  }
+  
+  #menu .recipe-Row .rec-card span {
+    font-weight: 700;
+    color: #5f64dc;
+  }
+  
+  #menu .recipe-Row .rec-card a {
+    text-decoration: none;
+    color: var(--secoundry);
+    font-weight: 700;
+    margin-right: 5px;
+    transition: var(--Etrns);
+  }
+  
+  #menu .recipe-Row .rec-card a:hover {
+    color: var(--primary);
+    transform: translateX(4px);
+  }
+  
+  /*--------+++ REVIEWS SECTION  */
+  .review-cnt {
+    width: 70%;
+  }
+  
+  .review-cnt .testibox {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px 120px;
+    text-align: center;
+  }
+  
+  .review-cnt .testibox img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+  
+  .review-cnt .testibox p {
+    font-weight: 700;
+    color: #5d5d5d;
+  }
+  
+  .review-cnt .testibox h5 {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary);
+  }
+  
+  #testislid .carousel-indicators {
+    bottom: -21%;
+  }
+  
+  /*--------+++ GALLERY SECTION  */
+  .galleryrow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+  }
+  
+  .galleryrow .item {
+    width: 100%;
+    height: 280px;
+    border-radius: var(--bdr);
+    overflow: hidden;
+  }
+  
+  .galleryrow .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--Ltrns);
+  }
+  
+  .galleryrow .item img:hover {
+    transform: scale(1.3);
+  }
+  
+  /*--------+++ CONTACT SECTION  */
+  #contact {
+    border-radius: 50px 50px 0px 0px;
+  }
+  
+  #contact .icnrow .col-10 {
+    display: flex;
+    align-items: center;
+  }
+  
+  #contact .icnrow:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  
+  #contact .icnrow .iconbox {
+    display: grid;
+    place-items: center;
+    font-size: 17px;
+    color: white;
+    background-color: var(--primary);
+    width: 50px;
+    height: 50px;
+    border-radius: 31% 69% 58% 42% / 23% 36% 64% 77%;
+    transition: var(--Ltrns);
+  }
+  
+  #contact .icnrow:hover .iconbox {
+    border-radius: 48% 52% 75% 25% / 30% 23% 77% 70%;
+    background-color: var(--secoundry);
+  }
+  
+  #contact .icnrow .iconbox i {
+    transition: var(--Ltrns);
+  }
+  
+  #contact .icnrow:hover .iconbox i {
+    transform: scale(1.2);
+  }
+  
+  #contact .icnrow {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--pColor);
+  }
+  
+  #contact .icnrow a {
+    text-decoration: none;
+    color: var(--pColor);
+  }
+  
+  #contact .devider {
+    margin: 30px 0;
+  }
+  
+  #contact .devider span {
+    display: inline-block;
+    height: 6px;
+    border-radius: 15px;
+    background-color: var(--primary);
+  }
+  
+  #contact .devider span:nth-child(1) {
+    margin-right: 10px;
+    width: 7%;
+  }
+  
+  #contact .devider span:nth-child(2) {
+    margin-right: 10px;
+    width: 15%;
+  }
+  
+  #contact .devider span:nth-child(3) {
+    width: 30%;
+  }
+  
+  #contact .socialbox {
+    display: flex;
+  }
+  
+  #contact .socialbox a {
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    color: var(--primary);
+    border: 3px solid var(--primary);
+    border-radius: 100%;
+    transition: var(--Ltrns);
+  }
+  
+  #contact .socialbox a:hover {
+    color: white;
+    transform: scale(0.9);
+    border: 3px solid var(--primary);
+    background-color: var(--primary);
+  }
+  
+  #contact .socialbox a:not(:last-child) {
+    margin-right: 15px;
+  }
+  
+  #contact iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: var(--bdr);
+    padding-left: 30px;
+  }

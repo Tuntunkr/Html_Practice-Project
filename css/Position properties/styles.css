@@ -1,0 +1,36 @@
+body{
+    height: 10000px;
+    width: 1000px;
+}
+
+#parent{
+border: 1px solid red;
+padding: 20px;
+width: 50%;
+}
+
+#one{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    /* position: relative; */
+
+
+}
+
+#two{
+height: 100px;
+width: 100px;
+display: inline-block;
+background-color: blue;
+position: absolute;
+bottom: 20px;
+}
+
+#three{
+height: 100px;
+width: 100px;
+display: inline-block;
+background-color: crimson;
+}

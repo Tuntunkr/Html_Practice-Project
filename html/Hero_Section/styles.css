@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*Use:=>  font-family: 'Poppins', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,p{
+    margin: 0;
+}
+
+.row{
+    display: flex;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* navigation */
+
+header{
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 1.5em 0;
+
+}
+
+.logo{
+    align-items: center;
+}
+
+.logo img{
+    max-width: 35px;
+}
+
+.logo h1{
+    font-weight: 700;
+    font-size: 35px;
+}
+
+nav ul{
+    gap: 2em;
+    align-items: center;
+}
+
+nav a {
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition:0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+nav a::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition:0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+
+}
+
+nav li:nth-of-type(5) a::after{
+    all:unset ;
+}
+
+nav a:hover::after{
+    width: 30px;
+}
+
+nav li:nth-of-type(5) a{
+    padding: 0.5em 1em;
+
+
+}
+
+/* hero */
+
+.hero{
+    gap: 2em;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    min-height: calc(100vh - 93.6px);
+}
+
+.hero>*{
+    flex: 1 1 25em;
+}
+
+.hero h1{
+    /* font-weight: 700; */
+    font-size: clamp(20px,5vw,30px);
+    line-height: 1;
+
+}
+
+.hero p{
+    font-weight: 500;
+    font-size: 30px;
+    padding: 1em 0;
+}
+
+@media screen and (max-width:900px) {
+    .toggleMenu{
+        position: absolute;
+        right: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        width: 30px;
+        height: 30px;
+        padding: 2em;
+        z-index: 1000;
+    }
+}

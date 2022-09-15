@@ -1,0 +1,140 @@
+/* =================== NAV =====================*/
+
+.main-nav {
+    background-color: #ffffff;
+    padding: 0px;
+    transition: all 0.5s ease;
+    z-index: 50;
+  }
+  
+  .main-nav.onNavScroll {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.01) 0px 4px 6px -2px;
+  }
+  
+  header nav .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  header nav .container-fluid {
+    max-width: 1200px;
+    padding: 0px;
+  }
+  
+  header .navbar-brand img {
+    width: 60px;
+  }
+  
+  header nav .nav-btn {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: var(--bdr);
+    padding: 14px 20px;
+    background-color: var(--primary);
+    color: white;
+    border: var(--bdr-wide) solid var(--light-main);
+    text-decoration: none;
+    transition: var(--Ltrns);
+  }
+  
+  header nav .nav-btn i {
+    padding-right: 5px;
+  }
+  
+  header nav .nav-btn:hover {
+    background-color: var(--secoundry);
+    border: var(--bdr-wide) solid var(--secnd-color);
+  }
+  
+  header nav .navbar-nav {
+    padding: 0px 5px;
+    margin-right: 20px;
+  }
+  
+  header nav .nav-item {
+    margin: 0px 7px;
+  }
+  
+  header nav .nav-item .nav-link {
+    color: var(--hColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 27px 1px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  header .main-nav.onNavScroll .nav-link {
+    color: var(--hd-gray);
+  }
+  
+  header nav .nav-item:hover .nav-link,
+  header nav .nav-item .nav-link.active {
+    color: var(--primary);
+  }
+  
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                      Mini Laptop (lg)
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  @media (max-width: 1024px) {
+  }
+  
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                    Tablet (md)
+    $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  @media (max-width: 981px) {
+    /* ======== NAV BAR ========*/
+    header .navbar-brand img {
+      width: 55px;
+    }
+  
+    header .navbar-toggler {
+      border: none;
+      background-color: transparent;
+      color: var(--hColor);
+    }
+  
+    /* header .navbar-toggler:active {
+      transform: rotate(45deg);
+    } */
+  
+    header .navbar-toggler:focus,
+    header .navbar-toggler:hover,
+    header .navbar-toggler:active {
+      color: var(--primary);
+    }
+  
+    header .collapse {
+      padding-bottom: 25px;
+    }
+  
+    header .navbar .container-fluid {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  
+    header nav .nav-item .nav-link {
+      font-size: 13px;
+      padding: 15px 1px;
+      text-align: center;
+    }
+    header .mb-btn-box {
+      display: flex;
+      justify-content: center;
+    }
+  
+    header nav .nav-btn {
+      margin-top: 20px;
+    }
+  }
+  
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                    Phones (sm)
+    $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  @media (max-width: 576px) {
+  }

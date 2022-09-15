@@ -1,0 +1,22 @@
+
+/* ===========================================
+work data Section
+======================================= */
+.section-work-data {
+    background: -webkit-linear-gradient(
+      0deg,
+      rgb(132 144 255) 0%,
+      rgb(98 189 252) 100%
+    );
+    color: var(--third);
+    text-align: center;
+  }
+  
+  .common-numbers {
+    font-size: 4.8rem;
+  }
+  
+  .section-work-data p {
+    color: var(--third);
+  }
+  

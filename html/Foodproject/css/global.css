@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* -- color  */
+  --primary: #e21f26;
+  --secoundry: #01aa4f;
+  --hColor: #2b0105;
+  --pColor: #303030;
+  --lWhite: #f7f7f7;
+
+  /* -- border radioud */
+  --bdr: 5px;
+
+  /* -- transition property */
+  --Ltrns: all 0.4s linear;
+  --Etrns: all 0.5s ease;
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.row {
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+  color: var(--pColor);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* -------------+++++ BACKGROUNDS */
+.bg-red {
+  background-color: var(--primary);
+}
+
+.bg-red-img {
+  background-color: var(--primary);
+  background-image: url(../Images/tastibg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-img {
+  background-image: url(../Images/light-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+/* -------------+++++ PRELOADER */
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 99999;
+  display: grid;
+  place-items: center;
+}
+
+/*------------+++++ MARK COLOR */
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: var(--primary);
+}
+
+::selection {
+  color: white;
+  background: var(--primary);
+}
+
+/*--------+++ CUSTOM SCROLLBER */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secoundry);
+}
+
+/* --------------- +++ Back to top */
+#myBtn {
+  position: fixed;
+  bottom: 3%;
+  right: 1%;
+  z-index: 10;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  transition: all 0.9s ease;
+  border-radius: var(--bdr);
+  justify-content: center;
+  align-items: center;
+}
+
+#myBtn:hover {
+  background-color: var(--primary);
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#myBtn:hover a {
+  transform: translateY(-3px);
+  text-decoration: none;
+  color: white;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+#myBtn a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+/*--------+++ SECTION SPACING  */
+.sGap {
+  padding: 100px 0;
+}
+
+/*--------+++ MAIN HD  */
+.mHD {
+  margin-bottom: 50px;
+}
+
+.mHD h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  color: var(--hColor);
+  font-weight: 700;
+}
+
+.mHD h3 span {
+  color: var(--primary);
+}
+
+.mHD.txt-c {
+  text-align: center;
+}
+
+.mHD .para {
+  width: 60%;
+  margin: auto;
+}
+
+.mHD p {
+  margin: 0;
+  color: rgb(55, 55, 55);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/*--------+++ SUB HD  */
+.sHD {
+  margin-bottom: 50px;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: var(--hColor);
+  font-weight: 700;
+}
+
+.sHD span {
+  color: var(--primary);
+}
+
+/*--------+++ BUTTON  */
+.butn {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  border-radius: 3px;
+  padding: 13px 23px;
+  overflow: hidden;
+}
+
+.btn-p {
+  background-color: var(--primary);
+  color: white;
+  position: relative;
+  z-index: 1;
+  transition: var(--Ltrns);
+}
+
+.btn-p:hover {
+  color: white;
+  transform: translateY(3px);
+  -webkit-box-shadow: 0px 18px 31px -11px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 18px 31px -11px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 18px 31px -11px rgba(0, 0, 0, 0.45);
+}
+
+.btn-p::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  background-color: #01aa4f;
+  z-index: -1;
+  transform: scale(0);
+  border-radius: 10px;
+  transition: var(--Ltrns);
+}
+
+.btn-p:hover::before {
+  transform: scale(1.5);
+}
+
+/*--------+++ WHATSAPP BTN  */
+.whatsappbtn {
+  position: fixed;
+  width: 50px;
+  bottom: 3%;
+  left: 1%;
+  z-index: 10;
+  text-decoration: none;
+  transition: var(--Ltrns);
+}
+
+.whatsappbtn:hover {
+  transform: scale(1.2);
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                    Mini Laptop (lg)
+   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+@media (max-width: 1024px) {
+  /*--------+++ MAIN HD  */
+  .mHD h3 {
+    font-size: 32px;
+  }
+
+  .mHD .para {
+    width: 80%;
+  }
+
+  /*--------+++ SUB HD  */
+  .sHD {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 992px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                   Tablet (md)
+   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+@media (max-width: 769px) {
+  .container {
+    max-width: 90%;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  /*--------+++ BUTTON  */
+  .butn {
+    font-size: 12px;
+    padding: 12px 22px;
+  }
+
+  /*--------+++ MAIN HD  */
+  .mHD p {
+    font-size: 11px;
+  }
+
+  /*--------+++ SECTION SPACING  */
+  .sGap {
+    padding: 80px 0;
+  }
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                   Phones (sm)
+   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+@media (max-width: 631px) {
+  .container {
+    max-width: 100%;
+  }
+
+  /*--------+++ MAIN HD  */
+  .mHD h3 {
+    font-size: 30px;
+  }
+
+  .mHD .para {
+    width: 100%;
+  }
+
+  /*--------+++ SUB HD  */
+  .sHD {
+    font-size: 30px;
+  }
+
+  /*--------+++ SECTION SPACING  */
+  .sGap {
+    padding: 60px 0;
+  }
+}

@@ -1,0 +1,9 @@
+.display{
+border: 1px solid red;
+width: 50%;
+height: 100px;
+
+}
+#div1{
+    display: none;
+}

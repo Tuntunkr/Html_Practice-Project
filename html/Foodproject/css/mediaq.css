@@ -1,0 +1,220 @@
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                    Mini Laptop (lg)
+   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+   @media (max-width: 1024px) {
+    /*--------+++ HERO SECTION  */
+    #herosec .hero-txt h1 {
+      font-size: 32px;
+    }
+  
+    /*--------+++ REVIEWS SECTION  */
+    .review-cnt .testibox {
+      padding: 40px 50px;
+    }
+  
+    .review-cnt .testibox img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    /*--------+++ GALLERY SECTION  */
+    .galleryrow .item {
+      height: 200px;
+    }
+  
+    /*--------+++ COUNTER SECTION  */
+    .countBox {
+      padding: 20px 10px;
+    }
+  
+    .countBox h4 {
+      font-size: 30px;
+    }
+  
+    .countBox h6 {
+      font-size: 14px;
+    }
+  
+    /*--------+++ REVIEWS SECTION  */
+    .review-cnt {
+      width: 80%;
+    }
+  
+    /*--------+++ GALLERY SECTION  */
+    .galleryrow {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .galleryrow .item {
+      height: 200px;
+    }
+  
+    /*--------+++ CONTACT SECTION  */
+    #contact {
+      border-radius: 40px 40px 0px 0px;
+    }
+  }
+  
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                     Tablet (md)
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  @media (max-width: 769px) {
+    /*--------+++ HERO SECTION  */
+    #herosec {
+      background-size: contain;
+      height: 65vh;
+      background-position: bottom right;
+    }
+  
+    #herosec .hero-txt {
+      padding-right: 40%;
+      height: 65vh;
+    }
+  
+    #herosec .hero-txt h1 {
+      font-size: 28px;
+    }
+  
+    /*--------+++ MENUE SECTION  */
+    #menu .recipe-Row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    /*--------+++ CONTACT SECTION  */
+  
+    #contact .icnrow:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  
+    #contact iframe {
+      height: 500px;
+      padding-left: 0px;
+      padding-top: 50px;
+    }
+  }
+  
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                     Phones (sm)
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  @media (max-width: 631px) {
+    /*--------+++ HERO SECTION  */
+    #herosec {
+      height: 55vh;
+    }
+  
+    #herosec .hero-txt {
+      align-items: start;
+      padding: 0;
+      padding-top: 40px;
+      height: auto;
+    }
+  
+    #herosec .hero-txt h1 {
+      font-size: 25px;
+    }
+  
+    /*--------+++ COUNTER SECTION  */
+    .countBox h4 {
+      font-size: 22px;
+    }
+  
+    .countBox h6 {
+      font-size: 13px;
+    }
+  
+    /*--------+++ MENUE SECTION  */
+    #menu .recipe-Row {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    #menu .nav-pills .nav-link {
+      font-size: 15px;
+    }
+    /*--------+++ REVIEWS SECTION  */
+    .review-cnt {
+      width: 100%;
+    }
+  
+    .review-cnt .testibox {
+      padding: 30px 20px;
+    }
+    .review-cnt .testibox h5 {
+      font-size: 15px;
+    }
+  
+    /*--------+++ GALLERY SECTION  */
+    .galleryrow {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 13px;
+    }
+  
+    .galleryrow .item {
+      height: 200px;
+    }
+  
+    /*--------+++ CONTACT SECTION  */
+  
+    #contact .icnrow .iconbox {
+      font-size: 15px;
+      width: 40px;
+      height: 40px;
+    }
+  
+    #contact .icnrow {
+      font-size: 13px;
+    }
+  
+    #contact .socialbox a {
+      width: 35px;
+      height: 35px;
+      font-size: 13px;
+    }
+  
+    #contact iframe {
+      height: 400px;
+    }
+  }
+  
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                     Phones (sm)
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  @media (max-width: 445px) {
+    /*--------+++ GALLERY SECTION  */
+    .galleryrow .item {
+      height: 150px;
+    }
+  }
+  
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                     Phones (sm)
+     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  @media (max-width: 345px) {
+    /*--------+++ HERO SECTION  */
+    #herosec .hero-txt h1 {
+      font-size: 20px;
+    }
+  
+    /*--------+++ COUNTER SECTION  */
+    .counterSection .Gridrow {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  
+    .countBox h4 {
+      font-size: 20px;
+    }
+  
+    .countBox h6 {
+      font-size: 12px;
+    }
+  
+    .countBox {
+      padding: 10px 10px;
+    }
+  
+    /*--------+++ GALLERY SECTION  */
+    .galleryrow .item {
+      height: 120px;
+    }
+  }

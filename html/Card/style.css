@@ -1,0 +1,16 @@
+body{
+    background-color: blueviolet;
+}
+
+.card{
+    background: #fff;
+    border: 1px solid #cdd3d9;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+}
+
+.ma4{
+    margin: 24px;
+}

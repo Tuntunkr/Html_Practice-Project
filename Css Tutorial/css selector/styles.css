@@ -1,0 +1,50 @@
+body{
+    /* border: 10px solid green; */
+    /* align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    text-decoration-line: overline;
+    justify-items: center;
+    /* marker-end: none; */
+    /* color: brown;
+    text-decoration: underline;
+    color: aqua;  */
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* clear: both; */
+    /* margin: -20px 0 0 -20px; */
+    
+}
+
+/* 1. element selector   element selector ka priority kam hota hain as compair to id and class selector */
+
+
+h1{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    text-decoration-line: overline;
+    justify-items: center;
+    /* marker-end: none; */
+    color: brown;
+    text-decoration: underline;
+    color: aqua;
+}
+/* 2. id selector id selector ka priority sab se jada hota hain   */
+
+#heading{
+    color: blue;
+
+}
+/* 3.class selector class selector ka priority sencond number pe ata hain  order by */
+
+.h{
+    color: blueviolet;
+}
